@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Summit Ads | Meta Ads for Houston Med Spas</title>
+<meta name="description" content="Summit Ads runs Meta ads for owner-run Houston med spas. Clear offers, ads on Instagram and Facebook, every click straight to booking. Get a free ad audit.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Summit Ads | Meta Ads for Houston Med Spas">
+<meta property="og:description" content="Booked consults, not likes. Get a free 5-minute ad audit.">
+<style>
+:root{
+  --bg:#070B14; --card:#0E1422; --line:rgba(255,255,255,.08);
+  --pink:#BE185D; --pink-2:#EC4899; --text:#fff; --muted:#CBD5E1; --dim:#94A3B8;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:"Avenir Next","Helvetica Neue",Arial,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.glow{position:absolute;inset:0;pointer-events:none;background:
+  radial-gradient(circle at 85% 0%,rgba(190,24,93,.35),transparent 45%),
+  radial-gradient(circle at 0% 100%,rgba(236,72,153,.16),transparent 40%)}
+
+/* nav */
+nav{position:sticky;top:0;z-index:10;background:rgba(7,11,20,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:2px;font-size:18px}
+.brand svg{width:44px;height:28px}
+.links{display:flex;align-items:center;gap:28px;font-weight:600;color:var(--muted);font-size:15px}
+.links a:hover{color:#fff}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--pink);color:#fff;font-weight:700;padding:16px 30px;border-radius:999px;font-size:17px;transition:transform .15s,background .15s}
+.btn:hover{background:#D61F6D;transform:translateY(-2px)}
+.btn.small{padding:10px 20px;font-size:15px}
+.btn.ghost{background:transparent;border:1.5px solid rgba(255,255,255,.25)}
+.btn.ghost:hover{border-color:#fff;background:rgba(255,255,255,.05)}
+
+/* type */
+.kicker{font-size:14px;font-weight:700;letter-spacing:5px;color:var(--pink-2);text-transform:uppercase;margin-bottom:18px}
+h1{font-size:clamp(44px,7vw,84px);line-height:1.02;font-weight:800;letter-spacing:-2px}
+h2{font-size:clamp(34px,4.6vw,56px);line-height:1.06;font-weight:800;letter-spacing:-1px}
+h3{font-size:24px;line-height:1.2;font-weight:800;margin-bottom:10px}
+.lead{font-size:clamp(19px,2vw,23px);color:var(--muted);max-width:640px}
+.pink{color:var(--pink-2)}
+
+/* sections */
+section{position:relative;padding:110px 0;border-top:1px solid var(--line)}
+.head{max-width:720px;margin-bottom:56px}
+.head .lead{margin-top:18px}
+
+/* hero */
+.hero{position:relative;padding:120px 0 110px;border-top:0;overflow:hidden}
+.hero .lead{margin:28px 0 40px}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px}
+.who{display:flex;flex-wrap:wrap;gap:10px;margin-top:56px}
+.chip{border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--muted);padding:10px 18px;border-radius:999px;font-size:15px;font-weight:600}
+.chip b{color:#fff}
+
+/* cards */
+.grid{display:grid;gap:20px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:34px 30px;position:relative;overflow:hidden}
+.card p{color:var(--muted);font-size:17px}
+.num{font-size:64px;font-weight:800;color:var(--pink);line-height:1;margin-bottom:18px}
+.card::before{content:"";position:absolute;top:0;left:0;height:4px;width:40%;background:var(--pink)}
+
+/* stats */
+.stat .big{font-size:clamp(48px,5vw,62px);white-space:nowrap;font-weight:800;color:var(--pink-2);line-height:1;letter-spacing:-3px}
+.stat .label{font-size:22px;font-weight:700;margin:10px 0 12px}
+.note{margin-top:22px;color:var(--dim);font-size:15px}
+
+/* audit */
+.audit{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.checks{list-style:none;display:grid;gap:14px;margin:30px 0 36px}
+.checks li{display:flex;gap:14px;font-size:19px;color:var(--muted)}
+.checks li::before{content:"✓";color:#fff;background:var(--pink);width:28px;height:28px;flex:none;border-radius:50%;display:grid;place-items:center;font-size:15px;font-weight:800;margin-top:1px}
+.dm{background:linear-gradient(160deg,#1A0F1C,var(--card));border:1px solid rgba(236,72,153,.35);border-radius:28px;padding:44px 38px;text-align:center}
+.dm .word{font-size:clamp(54px,7vw,82px);font-weight:800;letter-spacing:-2px;margin:8px 0 6px}
+.dm p{color:var(--muted);margin-bottom:28px}
+
+footer{border-top:1px solid var(--line);padding:40px 0;color:var(--dim);font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
+footer a:hover{color:#fff}
+
+@media (max-width:900px){
+  .g3,.g4{grid-template-columns:1fr 1fr}
+  .audit{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .wrap{padding:0 16px}
+  .links a:not(.btn){display:none}
+  .g3,.g4{grid-template-columns:1fr}
+  section{padding:80px 0}
+  .hero{padding:80px 0}
+  .btn{width:100%;justify-content:center}
+  .links .btn{width:auto}
+  .card{padding:28px 24px}
+  .dm{padding:36px 24px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Summit Ads home">
+      <svg viewBox="280 370 520 270" aria-hidden="true"><polygon points="520,640 640,470 800,640" fill="#fff"/><polygon points="280,640 470,370 660,640" fill="#BE185D"/><polygon points="470,370 527,451 500,440 470,475 440,440 413,451" fill="#fff"/></svg>
+      SUMMIT ADS
+    </a>
+    <div class="links">
+      <a href="#how">How it works</a>
+      <a href="#math">The math</a>
+      <a href="#offers">Offers</a>
+      <a class="btn small" href="#audit">Free audit</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="glow"></div>
+  <div class="wrap" style="position:relative">
+    <div class="kicker">Meta ads for Houston med spas</div>
+    <h1>Fill your books with <span class="pink">booked consults.</span><br>Not likes.</h1>
+    <p class="lead">I run Instagram and Facebook ads for owner-run med spas in Houston. A clear offer, ads aimed at women near your spa, and every click sent straight to booking.</p>
+    <div class="cta-row">
+      <a class="btn" href="#audit">Get a free ad audit →</a>
+      <a class="btn ghost" href="#how">How it works</a>
+    </div>
+    <div class="who">
+      <span class="chip"><b>Owner-run</b> med spas</span>
+      <span class="chip">Botox · Fillers · Facials · Lasers</span>
+      <span class="chip">One or two locations</span>
+      <span class="chip">Houston, TX</span>
+    </div>
+  </div>
+</header>
+
+<section id="why">
+  <div class="wrap">
+    <div class="head">
+      <div class="kicker">The problem</div>
+      <h2>3 reasons your ads aren't booking consults</h2>
+    </div>
+    <div class="grid g3">
+      <div class="card"><div class="num">01</div><h3>No clear offer</h3><p>"Book your Botox today" isn't a reason to book today. People need a specific deal, a reason to act now, and one easy next step.</p></div>
+      <div class="card"><div class="num">02</div><h3>It sends people to your home page</h3><p>Every extra tap loses people. The ad should land them right on booking for that exact offer.</p></div>
+      <div class="card"><div class="num">03</div><h3>Slow follow-up</h3><p>A lead who waits a day has already booked somewhere else. Reply in minutes, not hours.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="glow" style="opacity:.6"></div>
+  <div class="wrap" style="position:relative">
+    <div class="head">
+      <div class="kicker">How it works</div>
+      <h2>Simple. Built to book.</h2>
+      <p class="lead">You run the spa. I handle the ads, and you see exactly what they bring in.</p>
+    </div>
+    <div class="grid g4">
+      <div class="card"><div class="num">01</div><h3>The offer</h3><p>Built from your real menu: a reason to book now that protects your prices.</p></div>
+      <div class="card"><div class="num">02</div><h3>The ads</h3><p>Written and run on Instagram and Facebook, aimed at women near your spa.</p></div>
+      <div class="card"><div class="num">03</div><h3>Straight to booking</h3><p>Every click goes to booking for that offer. No menus, no maze.</p></div>
+      <div class="card"><div class="num">04</div><h3>Weekly report</h3><p>A simple update: what was spent and how many people booked.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="math">
+  <div class="wrap">
+    <div class="head">
+      <div class="kicker">Med spa math</div>
+      <h2>What is one new Botox client worth?</h2>
+      <p class="lead">More than the first visit. Clients come back every 3–4 months.</p>
+    </div>
+    <div class="grid g3">
+      <div class="card stat"><div class="big">~$450</div><div class="label">per visit</div><p>$15 per unit × about 30 units.</p></div>
+      <div class="card stat"><div class="big">~$1,800</div><div class="label">per year</div><p>About 4 visits a year from one client.</p></div>
+      <div class="card stat"><div class="big">$2,250</div><div class="label">a month</div><p>Missing just 5 new clients a month, before they ever come back.</p></div>
+    </div>
+    <p class="note">Example numbers. Every spa's prices are different, and the free audit runs the math for yours.</p>
+  </div>
+</section>
+
+<section id="offers">
+  <div class="glow" style="opacity:.6"></div>
+  <div class="wrap" style="position:relative">
+    <div class="head">
+      <div class="kicker">Offers, not discounts</div>
+      <h2>New clients in. <span class="pink">Prices protected.</span></h2>
+      <p class="lead">"Just run a discount" is how med spas end up busy and broke. These bring people in without cheapening your brand.</p>
+    </div>
+    <div class="grid g3">
+      <div class="card"><div class="num">01</div><h3>First visit, no consult fee</h3><p>Remove the hurdle, not your margin. New clients say yes faster when the first step is free.</p></div>
+      <div class="card"><div class="num">02</div><h3>A bonus, not a discount</h3><p>Book lip filler, get a free HydraFacial. Your prices stay the same and they try a second service.</p></div>
+      <div class="card"><div class="num">03</div><h3>Real limited spots</h3><p>20 holiday spots, book by a set date, and mean it. A real deadline beats "limited time."</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="audit">
+  <div class="wrap audit">
+    <div>
+      <div class="kicker">Free 5-minute ad audit</div>
+      <h2>See what I'd fix first.</h2>
+      <ul class="checks">
+        <li>Your website and booking flow</li>
+        <li>Your Meta ads, or why you have none</li>
+        <li>What the spas near you are running right now</li>
+      </ul>
+      <p class="lead">No pitch deck, no pressure. Just what I'd fix first.</p>
+    </div>
+    <div class="dm">
+      <div class="kicker" style="margin:0">Send me a DM</div>
+      <div class="word">“AUDIT”</div>
+      <p>on Instagram at @summitads.houston</p>
+      <a class="btn" href="https://ig.me/m/summitads.houston" target="_blank" rel="noopener">Message on Instagram →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top" style="font-size:15px">
+      <svg viewBox="280 370 520 270" aria-hidden="true" style="width:36px;height:22px"><polygon points="520,640 640,470 800,640" fill="#fff"/><polygon points="280,640 470,370 660,640" fill="#BE185D"/><polygon points="470,370 527,451 500,440 470,475 440,440 413,451" fill="#fff"/></svg>
+      SUMMIT ADS
+    </a>
+    <span>Meta ads for Houston med spas · © 2026 Summit Ads</span>
+    <a href="https://www.instagram.com/summitads.houston/" target="_blank" rel="noopener">Instagram ↗</a>
+  </div>
+</footer>
+
+</body>
+</html>
